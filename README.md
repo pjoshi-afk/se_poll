@@ -36,3 +36,7 @@ pipeline {
         }
     }
 }
+
+
+FROM tomcat:9-jdk21
+COPY target/*.war /usr/local/tomcat/webapps
